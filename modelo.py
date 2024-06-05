@@ -51,7 +51,7 @@ def generate():
 
 # Cargar el modelo una sola vez al inicio
 with tf.keras.utils.custom_object_scope({'KerasLayer': hub.KerasLayer}):
-    modelo_cargado = load_model('../IA-Medica-Remota--main/breast_canser.h5')
+    modelo_cargado = load_model('../ProyectoFinal/breast_canser.h5')
 
 # Mapeo de etiquetas
 label = {0: "benign", 1: "malignant"}
